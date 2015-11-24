@@ -52,12 +52,24 @@ return [
             'prefix'   => '',
         ],
 
-        'mysql' => [
+       /* 'mysql' => [
             'driver'    => 'mysql',
             'host'      => env('DB_HOST', 'localhost'),
             'database'  => env('DB_DATABASE', 'blog'),
             'username'  => env('DB_USERNAME', 'root'),
             'password'  => env('DB_PASSWORD', '123456'),
+            'charset'   => 'utf8',
+            'collation' => 'utf8_unicode_ci',
+            'prefix'    => '',
+            'strict'    => false,
+        ],*/
+
+        'mysql' => [
+            'driver'    => 'mysql',
+            'host'      => env('DB_HOST', 'tcp://10.10.26.58:3306'),
+            'database'  => env('DB_DATABASE', 'c6mNyD0PuJGfs2BW'),
+            'username'  => env('DB_USERNAME', 'uA5msCVW0DXFGdvZ'),
+            'password'  => env('DB_PASSWORD', 'pYCdFXS1ZlUNJt7oV'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
