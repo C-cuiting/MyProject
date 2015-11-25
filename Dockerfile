@@ -22,6 +22,6 @@ RUN sed -i -e "s|^;date.timezone =.*$|date.timezone = PRC |" /etc/php.ini
 RUN mv /usr/sbin/tcpdump /usr/local/bin
 ADD . $code_root
 RUN test -e $httpd_conf && echo "Include $httpd_conf" >> /etc/httpd/conf/httpd.conf
-EXPOSE 8080
+EXPOSE 80
 CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
 
